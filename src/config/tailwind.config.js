@@ -1,0 +1,93 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      // TODO: 아래 부분은 나중에 다시 세팅
+      container: {
+        screens: {
+          default: "400px",
+        },
+      },
+      borderRadius: {
+        2: "2px",
+        4: "4px",
+        8: "8px",
+        16: "16px",
+        20: "20px",
+      },
+      borderWidth: {
+        3: "3px",
+      },
+      spacing: {
+        "top-nav": "var(--top-nav)",
+        "bottom-nav": "var(--bottom-nav)",
+        1: "1px",
+        2: "2px",
+        3: "3px",
+        4: "4px",
+        6: "6px",
+        8: "8px",
+        12: "12px",
+        14: "14px",
+        16: "16px",
+        18: "18px",
+        20: "20px",
+        24: "24px",
+        32: "32px",
+        36: "36px",
+        38: "38px",
+        40: "40px",
+        48: "48px",
+        52: "52px",
+        68: "68px",
+        72: "72px",
+        76: "76px",
+        80: "80px",
+        92: "92px",
+        98: "98px",
+        100: "100px",
+        120: "120px",
+        200: "200px",
+        240: "240px",
+        300: "300px",
+        320: "320px",
+        335: "335px",
+        448: "448px",
+        427: "427px",
+      },
+      colors: {
+        white: "var(--white)",
+        black: "var(--black)",
+        "gray-005": "var(--gray-005)",
+        "gray-010": "var(--gray-010)",
+        "gray-020": "var(--gray-020)",
+        "gray-030": "var(--gray-030)",
+        "gray-040": "var(--gray-040)",
+        "gray-050": "var(--gray-050)",
+        "gray-060": "var(--gray-060)",
+        "gray-070": "var(--gray-070)",
+        "gray-080": "var(--gray-080)",
+        "gray-090": "var(--gray-090)",
+        "gray-100": "var(--gray-100)",
+        "lime-20": "var(--lime-20)",
+        "lime-40": "var(--lime-40)",
+        "lime-60": "var(--lime-60)",
+        blue: "var(--blue)",
+        red: "var(--red)",
+      },
+    },
+  },
+
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar-hide"),
+  ],
+};
